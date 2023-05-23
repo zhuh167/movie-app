@@ -1,0 +1,97 @@
+.main__inf {
+  height: 0;
+  position: relative;
+  transition: height 500ms;
+  overflow: hidden;
+      &.active {
+      height: 700px;
+      }
+}
+.main__info {
+    &-close {
+      z-index: 100;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      color: white;
+      background: rgba(20, 20, 20, 0.7);
+      border-radius: 50%;
+      padding: 20px;
+      cursor: pointer;
+    }
+    &-img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 60%;
+    }
+    &-block {
+      height: 700px;
+      position: relative;
+    }
+    &-content {
+      position: relative;
+      z-index: 10;
+      height: 100%;
+      background: linear-gradient(90deg, #000000 40%, rgba(0, 0, 0, 0.2) 62.82%, rgba(0, 0, 0, 0) 67.73%);
+      &-block {
+        width: 50%;
+        height: 100%;
+        padding: 115px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        gap: 30px;
+      }
+      &-title {
+        font-size: 50px;
+        color: #FFFFFF;
+        font-family: 'Raleway';
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      &-text {
+        font-size: 20px;
+        color: #FFFFFF;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+      &-date {
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        align-items: center;
+        & span {
+          font-family: 'Montserrat';
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+
+.main__info-content-block .main__info-content-actors {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+  
+  .infoblock-enter-active,
+  .infoblock-leave-active {
+    transition: all  0.3s ease-in-out;
+  }
+  
+  .infoblock-enter-from,
+  .infoblock-leave-to {
+    opacity: 0;
+    transform: scale(1);
+  }

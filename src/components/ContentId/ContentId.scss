@@ -1,0 +1,191 @@
+.main__media {
+    background: black;  
+    margin-top: 101px;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    
+    &-block {
+        padding: 30px 50px; 
+        position: relative; 
+        display: flex;
+        flex-wrap: wrap;      
+        align-items: center;
+        min-height: 700px;
+        width: 100%;
+        background: linear-gradient(90deg, #000000 20%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 65%);
+        @include media(950) {
+            flex-direction: column  ;
+        }
+    }
+    &-poster {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        object-fit: cover;
+        filter: blur(10px);
+        @include media(576) {
+            width: 100%;
+        }
+    }
+    &-left {
+        width: 60%;
+        position: relative;
+        @include media(950) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 59px;
+            color: #FFFFFF;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            @include media(576) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            @include media(576) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &-janr {
+            margin-bottom: 100px;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.6);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            & span {
+                font-weight: 700;
+            }
+            @include media(950) {
+                margin-bottom: 20px;
+                justify-content: center;
+            }
+            @include media(576) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &-right {
+        width: 40%;
+        height: 460px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @include media(950) {
+            display: none;
+        }
+        & img {
+            width: 310px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    &-actors {
+        width: 100%;
+        @include media(950) {
+            margin-top: 20px;
+        }
+    }
+    &-title {
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        @include media(950) {
+            text-align: center;
+        }
+    }
+    &-casts {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative; 
+    }
+}
+.main__budjet {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    @include media(950) {
+        gap: 30px;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        & span {
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            @include media(576) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.main__recommend{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    &-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}
+    
+
+
+.infoblock-enter-active,
+.infoblock-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+
+.infoblock-leave-to {
+    opacity: 0;
+}
+
+.infoblock-enter-from {
+    transform: scale(1.1);
+    opacity: 0;
+}   

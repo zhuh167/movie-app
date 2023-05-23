@@ -1,0 +1,24 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.0.0",
+    "pinia": "^2.0.21",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "swiper": "^8.4.4",
+    "vue": "^3.2.38",
+    "vue-lazyload": "^3.0.0-rc.2",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^3.0.9"
+  }
+}
