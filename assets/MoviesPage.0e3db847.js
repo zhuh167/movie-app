@@ -1,0 +1,1 @@
+import{_ as o}from"./Content.e92414f6.js";import{u as a,o as s,a as t,c as n,b as r}from"./index.a97e0d74.js";const c={class:"main"},l={__name:"MoviesPage",setup(p){const e=a();return s(()=>{e.popularMovies=null}),(_,m)=>(t(),n("main",c,[r(o,{type:"movie"})]))}};export{l as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./Content.e92414f6.js";import{u as o,o as s,a as t,c as n,b as r}from"./index.a97e0d74.js";const c={class:"main"},i={__name:"TvsPage",setup(p){const a=o();return s(()=>{a.popularTvs=null}),(_,m)=>(t(),n("main",c,[r(e,{type:"tv"})]))}};export{i as default};
